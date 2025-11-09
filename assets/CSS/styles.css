@@ -151,7 +151,7 @@ button{
 }
 .menu_list{
     display: flex;
-    list-style: nome;
+    list-style: none;
     gap: 2rem;
     }
 
