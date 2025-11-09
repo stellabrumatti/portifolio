@@ -99,13 +99,19 @@ button{
 .botao:hover{
     background-color: var(--purple-800);
     box-shadow: var(--shadow-md);
-    transform: translateY(00.25rem);
+    transform: translateY(-0.25rem);
 }
-.botao-outline:hover{
+.botao-outline{
+    border: 0.15rem solid var(--purple-500);
+    color: var(--purple-500);
+    background-color: transparent;
+}
+
+.botao-outline:hover {
     background-color: var(--purple-500);
     color: var(--white);
     box-shadow: var(--shadow-md);
-    transform: translateY(00.25rem);
+    transform: translateY(-0.25rem);
 }
 
 /* Menu */
@@ -148,9 +154,11 @@ button{
     list-style: nome;
     gap: 2rem;
     }
+
 .menu_list a{
     padding: 0,5rem;
 }
+
 /* Seções - Estilos Comuns*/
 
 .hero_conteiner,
@@ -192,7 +200,7 @@ contact_container{
 
 .hero_content p {
     font-size: 1.125rem;
-    line-height: 1.875rem;
+    line-height: 1.75rem;
     color: var(--gray-400);
 }
 
@@ -262,7 +270,8 @@ contact_container{
 
 .about_content p {
     font-size: 1.125rem;
-    line-height: 1.875rem;
+    line-height: 1.75rem;
+    text-align:justify;
     color: var(--gray-400);
     margin-bottom: 1rem;
 }
@@ -292,13 +301,15 @@ contact_container{
 .stats-wrapper .stat-number {
     font-size: 1.5rem;
     font-weight: 700;
+    text-align: center;
     color: var(--purple-500);
     margin-bottom: 0;
 }
 
 .stats-wrapper .stat-label {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: var(--gray-400);
+    text-align: center;
     margin-bottom: 0;
 }
 /* === CONTACT === */
@@ -370,8 +381,8 @@ form input,
 textarea{
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 0.25rem solid var(--gray-200);
     border-radius: 0.5rem;
+    border: 0.25rem solid var(--gray-200);
     font-size: 1rem;
     background-color: var(--white);
     transition: border-color 0.3s ease;
@@ -417,7 +428,7 @@ form span{
 .sucess_icon {
     width: 7.5rem;
     height: 7.5rem;
-    background-color: var(--purple-100);
+    background-color: var(--purple-300);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -428,16 +439,6 @@ form span{
     width: 3.75rem;
     height: 3.75rem;
     fill: var(--purple-500);
-}
-
-.sucess_icon {
-    filter: saturate(100%) 
-            invert(9%) 
-            sepia(57%) 
-            saturate(3044%) 
-            hue-rotate(255deg) 
-            brightness(89%) 
-            contrast(105%);
 }
 
 .sucess_content h1 {
@@ -452,15 +453,18 @@ form span{
     line-height: 1.875rem;
 }
 
-/* Footer */
+/* === FOOTER === */
+
 footer{
     padding: 2.5rem;
     font-weight: 600;
+    text-align: center;
     background: linear-gradient(to right top, var(--purple-500), var(--purple-800));
     color: var(--white);
     margin-top: auto;
 }
-/* RESPONSIVIDADE */
+
+/* === RESPONSIVIDADE === */
 
 /* === TELAS MÉDIAS - MONITORES E NOTEBOOKS (até 1120px) === */
 @media screen and (max-width: 1120px) {

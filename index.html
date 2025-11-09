@@ -7,8 +7,11 @@
  
     <!-- Fonte do Google - Poppins -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
- 
+
+    <!-- PADRÃO CARACTERES-->
     <meta charset="UTF-8">
+
+     <!-- LAYOUT MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Meta Tags Essenciais-->
@@ -23,15 +26,18 @@
      <!-- Link para o arquivo CSS-->
      <link rel="stylesheet" href="./assets/css/styles.css">
 
-        <title>Portfólio da Stella</title>
+        <-- TÍTULO DA PÁGINA -->
+        <title>Portifólio da Stella</title>
+
 </head>
+
 <body>
     
     <! -- Menu -->
     <header class="flex menu_container">
         <article class="menu_content">
             <div id="titulo">
-                <a href="#>Portfolio"</a>
+                <a href="index.html">Portfolio</a>
             </div>
 
             <nav>
@@ -56,8 +62,8 @@
                 <h1>Desenvolvedor Full Stack</h1>
                 <p>Transformo ideias em código e crio experiências digitais incriveis</p>
                 <div class="hero_buttons">
-                    <a hef="contact" class="botao">Entre em Contato</a>
-                    <a hef="about" class="botao-outline">Saiba Mais...</a>
+                    <a hef="#contact" class="botao">Entre em Contato</a>
+                    <a hef="#about" class="botao-outline">Saiba Mais...</a>
 
                 </div>
             </article>
@@ -67,44 +73,21 @@
                 <img 
                     src="./assets/img/dev_woman.svg"
                     alt="Ilustração com uma pessoa desenvolvedora escrevendo código."
-                    class="ilustracao"
+                    class="ilustracao float-animation"
                  >   
             </figure>
 
         </section>
 
         <!-- #ABOUT -->
-        <section id="#about" class="abaot_container">
-
-            <!-- FOTO DO PERFIL -->
-            <figure class="abaut_image">
-                <img
-                    src=".//assets/img/avatar_dev_woman.svg"
-                    alt="Foto da pessoa sesenvolvedora."
-            </figure>
-            
-
-            <!-- CONTEÚDO DO PERFIL -->
-            <article class="abaout_content">
-
-                <h2>Sobre mim</h2>
-                <p>Pokem ipsum dolor sit amet Corsola Chansey Qwilfish Liepard Blissey Seviper. Psychic Cloyster Virizion Escavalier Drifloon Elekid Lombre. </p>
-                <p>Ivysaur Staravia Wailmer Sharpedo Rhyhorn Mothim Mantine. Ash Drapion Lucario Stunfisk what kind of Pokemon are you Yanma Cryogonal. </p>
-                <p>    Tail Whip Granbull Sandshrew Qwilfish Klang Milotic Whismur.</p>
-
-                <div class="about_stats">
-                    <a href="#" target="blank" class="botao>Ver GitHub"</a>
-                    <div class="stat-item">
-                     <p class="stat-number">100</p>
-                    <p class="stat-label">Seguidores</p>   
-                    </div>
-                </div>
-            </article>
+        <section id="about" class="about_container">
 
         </section>
 
+
+           
         <!-- #CONTACT -->
-        <section id="contact">
+        <section id="contact" class="contact_container">
 
             <!-- REDES SOCIAIS -->
             <article class="contact_info">
@@ -139,14 +122,18 @@
             </article>
 
             <!-- FORMULÁRIO -->
-            <form id="formulario">
+            <form action="https://formsubmit.co/ba82f6c59ae4321267c99b7fddd1ccf2" method="POST" id="formulario">
+
+                <input type="hidden" nome="_next" value="http://127.0.0.1:5500/sucess.html"    
+                 <input type="hidden" name="_captcha" value="false">
+
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
                 <span id="txtNome"></span>
 
                 <label for="email">E-mail</label>
                 <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
-                <span id="txtemail"></span>
+                <span id="txtEmail"></span>
 
                 <label for="assunto">Assunto</label>
                 <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
