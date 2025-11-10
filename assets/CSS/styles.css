@@ -1,63 +1,41 @@
-*{
+/* Reset do Navegador */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: nome;
-        outline: nome;
-    font-family: 'Popins', sans-serif;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* === VARIÁVEIS === */
-
 :root {
-
     /* Cores */
-
     --purple-50:  #f4eaff; 
-
     --purple-100: #e9dcfa; 
-
     --purple-200: #cdb3f0; 
-
     --purple-300: #b186e5; 
-
     --purple-400: #9460db; 
-
     --purple-500: #6b36c8; 
-
     --purple-600: #5b2ca0; 
-
     --purple-700: #4c2177; 
-
     --purple-800: #441f88; 
-
     --purple-900: #2a0e4d; 
-
     --gray-100: #f5f5f5;
-
     --gray-200: #e8e8e8;
-
     --gray-400: #505861;
-
     --black-800: #171717;
-
     --white: #ffffff;
-
     --error: #e63946;
- 
+
     /* Sombras */
-
     --shadow-sm: 0 0.25rem 0.5rem #0000000D;
-
     --shadow-md: 0 0.25rem 0.75rem #6B36C84D;
-
     --shadow-lg: 0 0.5rem 1.5rem #6B36C833;
-
     --shadow-focus: 0 0 0 0.25rem #6B36C81A;
-
 }
- 
-/* Estilos agalobais */
+
+/* === ESTILOS GLOBAIS === */
 
 html{
     scroll-behavior: smooth;
@@ -70,6 +48,7 @@ body{
     background-color: var(--white);
     color: var(--black-800)
 }
+
 main{
     flex: 1;
 }
@@ -79,7 +58,7 @@ button{
     cursor: pointer;
 }
 
-/* Botões*/
+/* === BOTÕES === */
 
 .botao,
 .botao-outline{
@@ -92,15 +71,17 @@ button{
 }
 
 .botao{
-    border: nome;
+    border: none;
     color: var(--white);
     background-color: var(--purple-500);
 }
-.botao:hover{
+
+.botao:hover {
     background-color: var(--purple-800);
     box-shadow: var(--shadow-md);
     transform: translateY(-0.25rem);
 }
+
 .botao-outline{
     border: 0.15rem solid var(--purple-500);
     color: var(--purple-500);
@@ -114,7 +95,7 @@ button{
     transform: translateY(-0.25rem);
 }
 
-/* Menu */
+/* === MENU === */
 
 .menu_container{
     position: sticky;
@@ -136,11 +117,13 @@ button{
     padding: 0 1.5rem;
     margin: 0 auto;
 }
+
 .menu_container a{
     font-weight: 600;
     color: var(--white);
     transition: color 0.3s ease;
 }
+
 .menu_container a:hover{
     color: var(--purple-200);
 }
@@ -149,23 +132,24 @@ button{
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 .menu_list{
     display: flex;
     list-style: none;
     gap: 2rem;
-    }
-
-.menu_list a{
-    padding: 0,5rem;
 }
 
-/* Seções - Estilos Comuns*/
+.menu_list a{
+    padding: 0.5rem;
+}
 
-.hero_conteiner,
+/* === SEÇÕES - ESTILOS COMUNS === */
+
+.hero_container,
 .about_container,
-contact_container{
+.contact_container{
     max-width: 70rem;
-    margin: o auto;
+    margin: 0 auto;
     padding: 3rem 1.5rem;
     scroll-margin-top: 6rem;
 }
@@ -186,7 +170,7 @@ contact_container{
 }
 
 .hero_content h4 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--purple-500);
 }
@@ -199,7 +183,7 @@ contact_container{
 }
 
 .hero_content p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
     color: var(--gray-400);
 }
@@ -223,7 +207,7 @@ contact_container{
     border-radius: 2rem;
 }
 
-/* Animação - Imagem Hero */
+/* === ANIMAÇÃO - IMAGEM HERO === */
 @keyframes float {
 
     0%,
@@ -256,7 +240,7 @@ contact_container{
 
 .about_image img {
     width: 100%;
-    border: 0.375rem solid var(--purple-500);
+    border: 0.35rem solid var(--purple-500);
     border-radius: 50%;
     box-shadow: var(--shadow-lg);
 }
@@ -269,9 +253,9 @@ contact_container{
 }
 
 .about_content p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
-    text-align:justify;
+    text-align: justify;
     color: var(--gray-400);
     margin-bottom: 1rem;
 }
@@ -312,33 +296,35 @@ contact_container{
     text-align: center;
     margin-bottom: 0;
 }
+
 /* === CONTACT === */
+
 .contact_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 4rem auto 2rem;
     gap: 4rem;
 }
- 
+
 .contact_info h4{
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--purple-500);
 }
- 
+
 .contact_info p{
     font-size: 1.25rem;
     line-height: 1.75rem;
     color: var(--gray-400);
     margin-bottom: 2rem;
 }
- 
+
 .social_container{
     display: flex;
     gap: 3rem;
 }
- 
+
 .social_icon{
     width: 4rem;
     height: 4rem;
@@ -347,36 +333,36 @@ contact_container{
     border-radius: 0.5rem;
     transition: all 0.3s ease;
 }
- 
+
 .social_icon:hover{
     background-color: var(--purple-600);
     transform: translateY(-0.25rem);
     box-shadow: var(--shadow-md);
 }
- 
+
 .social_icon img{
     width: 100%;
     filter: brightness(0) saturate(100%);
 }
- 
+
 .social_icon:hover img{
     filter: brightness(0) invert(100%);
 }
- 
-/* Formulário de Contato */
- 
-form{
+
+/* === FORM === */
+
+form {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
 }
- 
+
 form label{
     font-size: 1rem;
     font-weight: 600;
     color: var(--black-800);
 }
- 
+
 form input,
 textarea{
     width: 100%;
@@ -387,24 +373,25 @@ textarea{
     background-color: var(--white);
     transition: border-color 0.3s ease;
 }
- 
+
 form input:focus,
 form textarea:focus{
     border-color: var(--purple-500);
     box-shadow: var(--shadow-focus);
 }
- 
+
 form textarea{
     resize: vertical;
     min-height: 7rem;
 }
- 
+
 form span{
     font-size: 0.75rem;
     color: var(--error);
     margin-top: -0.75rem;
     font-weight: 500;
 }
+
 /* === PÁGINA SUCESS === */
 .sucess_container {
     display: flex;
